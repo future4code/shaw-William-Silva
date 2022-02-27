@@ -4,7 +4,7 @@ console.log("Boas vindas ao jogo de Blackjack!")
 
 if (confirm("Quer iniciar uma nova rodada?")) {
 } else {
-   console.log("O jogo acabou")
+    console.log("O jogo acabou")
 }
 
 //VARIÁVEIS
@@ -20,11 +20,11 @@ const somaComputador = primeiraCartaComputador.valor + segundaCartaComputador.va
 //FUNÇÕES QUE IMPRIMEM AS LINHAS
 
 function linhaUsuario(c1, c2, s1) {
-   console.log(`Usuário - cartas: ${c1} ${c2} - ${s1}`);
+    console.log(`Usuário - cartas: ${c1} ${c2} - ${s1}`);
 }
 
 function linhaComputador(c1, c2, s1) {
-   console.log(`Computador - cartas: ${c1} ${c2} - ${s1}`);
+    console.log(`Computador - cartas: ${c1} ${c2} - ${s1}`);
 }
 
 //INVOCAÇÕES DAS FUNÇÕES QUE IMPRIMEM AS LINHAS
@@ -35,19 +35,19 @@ linhaComputador(primeiraCartaComputador.texto, segundaCartaComputador.texto, som
 //FUNÇÃO QUE MOSTRA O RESULTADO DA MÃO DOS 2 JOGADORES
 
 function quemVenceu(somaUsuario, somaComputador) {
-   if (somaUsuario > somaComputador && somaUsuario <= 21) {
-      console.log("O usuário ganhou!");
-   } else if (somaComputador > somaUsuario && somaComputador <= 21) {
-      console.log("O computador ganhou!");
-   } else if (somaUsuario === somaComputador && somaUsuario, somaComputador <= 21) {
-      console.log("Empate!");
-   } else if (somaUsuario === 22 && somaComputador <= 21) {
-      console.log("O computador ganhou!");
-   } else if (somaComputador === 22 && somaUsuario <= 21) {
-      console.log("O usuário ganhou!");
-   } else if (somaUsuario === somaComputador && somaUsuario, somaComputador === 22) {
-      console.log("Empate!");
-}
+    if (somaUsuario > somaComputador && somaUsuario <= 21) {
+        console.log("O usuário ganhou!");
+    } else if (somaComputador > somaUsuario && somaComputador <= 21) {
+        console.log("O computador ganhou!");
+    } else if (somaUsuario === somaComputador && somaUsuario, somaComputador <= 21) {
+        console.log("Empate!");
+    } else if (somaUsuario === 22 && somaComputador <= 21) {
+        console.log("O computador ganhou!");
+    } else if (somaComputador === 22 && somaUsuario <= 21) {
+        console.log("O usuário ganhou!");
+    } else if (somaUsuario === somaComputador && somaUsuario, somaComputador === 22) {
+        console.log("Empate!");
+    }
 }
 
 //INVOCAÇÃO DA FUNÇÃO QUE MOSTRA O RESULTADO DA MÃO DOS 2 JOGADORES
