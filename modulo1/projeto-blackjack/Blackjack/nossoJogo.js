@@ -41,9 +41,9 @@ function quemVenceu(somaUsuario, somaComputador) {
       console.log("O computador ganhou!");
    } else if (somaUsuario === somaComputador && somaUsuario, somaComputador <= 21) {
       console.log("Empate!");
-   } else if (somaUsuario > somaComputador && somaUsuario === 22) {
+   } else if (somaUsuario === 22 && somaComputador <= 21) {
       console.log("O computador ganhou!");
-   } else if (somaComputador > somaUsuario && somaComputador === 22) {
+   } else if (somaComputador === 22 && somaUsuario <= 21) {
       console.log("O usuário ganhou!");
    } else if (somaUsuario === somaComputador && somaUsuario, somaComputador === 22) {
       console.log("Empate!");
