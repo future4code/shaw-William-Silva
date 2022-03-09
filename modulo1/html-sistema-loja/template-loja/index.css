@@ -1,0 +1,33 @@
+h1 {
+    background-color: #d82d39;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    background-color: #1960ab;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+#posicaoPokemart {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width:300px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+
+#redirecionamentoDePagina {
+    
+}
+
+p {
+    text-align: center;
+}
+
+
