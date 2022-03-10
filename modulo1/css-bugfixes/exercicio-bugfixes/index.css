@@ -120,6 +120,14 @@ td button {
     color: black;
 }
 
+td button:hover {
+    background-color: darkgoldenrod;
+}
+
+.active-white-button:focus {
+    text-emphasis-color: white;
+}
+
 td img {
     width: 50px;
     height: 50px;
