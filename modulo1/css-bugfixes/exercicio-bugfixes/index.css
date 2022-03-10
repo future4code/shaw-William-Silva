@@ -108,6 +108,10 @@ table {
     margin-right: auto;
 }
 
+.alinhamento-texto-tabela {
+    text-align: center;
+}
+
 td button {
     background-color: #fadf63;
     width: 150px;
