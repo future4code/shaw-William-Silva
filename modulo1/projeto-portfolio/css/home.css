@@ -88,7 +88,46 @@
     margin-bottom: 30px;
 }
 
-.footer {
+.sobre-mim-titulo {
     text-align: center;
-    margin-top: -100px;
+    margin-top: -160px;
+    margin-bottom: 100px;
+}
+
+.sobre-mim-titulo hr {
+    width: 600px;
+    height: 1px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sobre-mim-titulo .sobre-mim-texto {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sobre-mim-redes-sociais a {
+    color: white;
+    transition: color 0.4s;
+    background-color: #005C53;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 0px 3px;
+    padding: 10px;
+}
+
+.sobre-mim-redes-sociais a:hover {
+    color: #005C53;
+    background: #FFFFFF;
+    border-radius: 50%;
+}
+
+.footer-texto {
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 30px;
 }
