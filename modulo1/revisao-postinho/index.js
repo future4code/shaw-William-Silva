@@ -49,20 +49,20 @@ const cadastro = () => {
     const usuario = []
 
     //  Sua lógica aqui
-        const nomeDoUsuario = prompt("Digite seu nome!")
-        const anoDeNascimento = Number(prompt("Digite seu ano de nascimento!"))
-        const senhaDoUsuario = prompt("Digite sua senha!")
-        const nacionalidade = prompt("Digite sua nacionalidade").toLowerCase()
-    
-        if (2022 - anoDeNascimento < 18) {
-            return "Você precisa ser maior de idade para se cadastrar!"
-        } else if (senhaDoUsuario.length < 6) {
-            return "Sua senha precisa ter no mínimo 6 caracteres!"
-        } else if (2022 - anoDeNascimento >= 18 && senhaDoUsuario.length >= 6 && (nacionalidade.includes('brasileiro') || nacionalidade.includes('brasileira')) === true) {
-            usuario.push(nomeDoUsuario, anoDeNascimento, senhaDoUsuario, nacionalidade)
-            return usuario
-        } else
-            return "Você não pode se cadastrar!"
+    /* const nomeDoUsuario = prompt("Digite seu nome!")
+    const anoDeNascimento = Number(prompt("Digite seu ano de nascimento!"))
+    const senhaDoUsuario = prompt("Digite sua senha!")
+    const nacionalidade = prompt("Digite sua nacionalidade").toLowerCase()
+
+    if (2022 - anoDeNascimento < 18) {
+        return "Você precisa ser maior de idade para se cadastrar!"
+    } else if (senhaDoUsuario.length < 6) {
+        return "Sua senha precisa ter no mínimo 6 caracteres!"
+    } else if (2022 - anoDeNascimento >= 18 && senhaDoUsuario.length >= 6 && (nacionalidade.includes('brasileiro') || nacionalidade.includes('brasileira')) === true) {
+        usuario.push(nomeDoUsuario, anoDeNascimento, senhaDoUsuario, nacionalidade)
+        return usuario
+    } else
+        return "Você não pode se cadastrar!" */
 }
 
 
@@ -73,23 +73,25 @@ console.log(cadastro());
 const login = () => {
     const login = "labenu"
     //  Sua lógica aqui
-    const senha = "labenu"
-        senhaUsuario = prompt("Digite sua senha!")
-    
-        if (senhaUsuario === senha) {
-            return "Usuário Logado"
-        } else
-            return "Senha Inválida"
+    /* const senha = "labenu"
+    senhaUsuario = prompt("Digite sua senha!")
+
+    if (senhaUsuario === senha) {
+        return "Usuário Logado"
+    } else
+        return "Senha Inválida" */
 }
 
 console.log(login());
+
+//DESAFIO
 
 // Exercício 5----------------------------------------------------------------------------------------------------
 
 const primeiraDose = () => {
 
     //  Sua lógica aqui
-    const nome = prompt("Digite seu nome!")
+    /* const nome = prompt("Digite seu nome!")
     const vacina = prompt("Qual vacina você tomou?").toLowerCase()
     let tempo = ''
     let data = ''
@@ -100,7 +102,7 @@ const primeiraDose = () => {
     } else if (vacina === "astrazenica" || vacina === "pfizer") {
         tempo = 90, data = '12/06/2022'
         return `Olá ${nome}! A próxima dose da ${vacina} é daqui a ${tempo} dias. Compareça no posto na data ${data}.`
-    }
+    } */
 }
 
 console.log(primeiraDose())
@@ -118,14 +120,19 @@ const segundaDose = (nomeDoUsuario) => {
     ]
 
     //  Sua lógica aqui
-
-
+    /* for (let usuario of usuarios) {
+        if (usuario.nome === nomeDoUsuario) {
+            usuario.imunizacao = "completa"
+        }
+    }
+    return usuarios */
 }
+
 console.log(segundaDose("Barbara"));
 
 // Exercício 7 --------------------------------------------------------------------------------------
 
-const avisoAosAtrasados = () => {
+const avisoAosAtrasados = (nomeDoUsuario) => {
     const usuarios = [
         { nome: "Artur", imunizacao: "incompleta" },
         { nome: "Barbara", imunizacao: "completa" },
@@ -133,9 +140,14 @@ const avisoAosAtrasados = () => {
     ]
 
     //  Sua lógica aqui
-
+    /* for (let usuario of usuarios) {
+        if (usuario.nome === nomeDoUsuario && usuario.imunizacao === "incompleta") {
+            return `Olá ${nomeDoUsuario}! Sua imunização está ${usuario.imunizacao}, por favor volte ao postinho para tomar a segunda dose.`
+        } else if (usuario.nome === nomeDoUsuario && usuario.imunizacao === "completa")
+        return `Olá ${nomeDoUsuario}! Sua imunização está ${usuario.imunizacao}!`
+    } */
 }
-console.log(avisoAosAtrasados());
+console.log(avisoAosAtrasados("Artur"));
 
 
 // DESAFIO------------------------------------------------------------------------------------------
@@ -170,8 +182,24 @@ const usuarios = [
 
 const cadastroDesafio = () => {
     //  Sua lógica aqui
+    /* const nome = prompt("Digite seu nome!")
+    const ano = prompt("Digite seu ano de nascimento!")
+    const nacionalidade = prompt("Digite sua nacionalidade!")
+    const senha = prompt("Digite sua senha!")
+    const vacina = prompt("Digite qual vacina você tomou!")
+    const imunizacao = prompt("Sua imunização está completa ou incompleta?")
+
+    const novoUsuario = {
+        nome: `${nome}`,
+        ano: `${ano}`,
+        nacionalidade: `${nacionalidade}`,
+        senha: `${senha}`,
+        vacina: `${vacina}`,
+        imunizacao: `${imunizacao}`
+    } */
+
 }
-console.log(cadastroDesafio());
+console.log(cadastroDesafio(usuariosAtualizados));
 
 const loginDesafio = () => {
     //  Sua lógica aqui
