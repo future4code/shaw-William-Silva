@@ -196,24 +196,58 @@ const cadastroDesafio = () => {
         senha: `${senha}`,
         vacina: `${vacina}`,
         imunizacao: `${imunizacao}`
-    } */
+    }
 
+    usuarios = usuarios.push({novoUsuario})
+ */
 }
-console.log(cadastroDesafio(usuariosAtualizados));
+
+console.log(cadastroDesafio(usuarios));
 
 const loginDesafio = () => {
     //  Sua lógica aqui
+    /*     senhaUsuario = prompt("Digite sua senha!")
+    
+        for (let i = 0; i < usuarios.length; i++) {
+            if (usuarios[i].senha === senhaUsuario) {
+                return "Usuário Logado"
+            } else if (usuarios[1].senha === senhaUsuario) {
+                return "Usuário Logado"
+            } else if (usuarios[2].senha === senhaUsuario) {
+                return "Usuário Logado"
+            } else
+                return "Senha Inválida"
+        } */
 }
-console.log(loginDesafio());
+
+console.log(loginDesafio(usuarios));
 
 const primeiraDoseDesafio = () => {
     //  Sua lógica aqui
 }
+
 console.log(primeiraDoseDesafio())
+
 const segundaDoseDesafio = (nomeDoUsuario) => {
     //  Sua lógica aqui
+/*     nomeDoUsuario = prompt("Digite seu nome!")
+
+    for (let i = 0; i <usuarios.length; i++) {
+        if (usuarios[i].nome === nomeDoUsuario) {
+            usuarios[i].imunizacao = "completa"
+            return usuarios[i]
+        } else if (usuarios[1].nome === nomeDoUsuario) {
+            usuarios[1].imunizacao = "completa"
+            return usuarios[1]
+        } else if (usuarios[2].nome === nomeDoUsuario) {
+            usuarios[2].imunizacao = "completa"
+            return usuarios[2]
+        } else 
+            return "Seu cadastro não foi encontrado"
+        
+    } return usuarios */
 }
-console.log(segundaDoseDesafio("ALGUM NOME AQUI"));
+console.log(segundaDoseDesafio("Carlos"));
 
 const avisoAosAtrasadosDesafio = () => {
     //  Sua lógica aqui
