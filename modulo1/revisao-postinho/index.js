@@ -49,7 +49,7 @@ const cadastro = () => {
     const usuario = []
 
     //  Sua lógica aqui
-    /* const nomeDoUsuario = prompt("Digite seu nome!")
+    const nomeDoUsuario = prompt("Digite seu nome!")
     const anoDeNascimento = Number(prompt("Digite seu ano de nascimento!"))
     const senhaDoUsuario = prompt("Digite sua senha!")
     const nacionalidade = prompt("Digite sua nacionalidade").toLowerCase()
@@ -62,7 +62,7 @@ const cadastro = () => {
         usuario.push(nomeDoUsuario, anoDeNascimento, senhaDoUsuario, nacionalidade)
         return usuario
     } else
-        return "Você não pode se cadastrar!" */
+        return "Você não pode se cadastrar!"
 }
 
 
@@ -73,25 +73,23 @@ console.log(cadastro());
 const login = () => {
     const login = "labenu"
     //  Sua lógica aqui
-    /* const senha = "labenu"
+    const senha = "labenu"
     senhaUsuario = prompt("Digite sua senha!")
 
     if (senhaUsuario === senha) {
         return "Usuário Logado"
     } else
-        return "Senha Inválida" */
+        return "Senha Inválida"
 }
 
 console.log(login());
-
-//DESAFIO
 
 // Exercício 5----------------------------------------------------------------------------------------------------
 
 const primeiraDose = () => {
 
     //  Sua lógica aqui
-    /* const nome = prompt("Digite seu nome!")
+    const nome = prompt("Digite seu nome!")
     const vacina = prompt("Qual vacina você tomou?").toLowerCase()
     let tempo = ''
     let data = ''
@@ -102,7 +100,7 @@ const primeiraDose = () => {
     } else if (vacina === "astrazenica" || vacina === "pfizer") {
         tempo = 90, data = '12/06/2022'
         return `Olá ${nome}! A próxima dose da ${vacina} é daqui a ${tempo} dias. Compareça no posto na data ${data}.`
-    } */
+    }
 }
 
 console.log(primeiraDose())
@@ -120,12 +118,12 @@ const segundaDose = (nomeDoUsuario) => {
     ]
 
     //  Sua lógica aqui
-    /* for (let usuario of usuarios) {
+    for (let usuario of usuarios) {
         if (usuario.nome === nomeDoUsuario) {
             usuario.imunizacao = "completa"
         }
     }
-    return usuarios */
+    return usuarios
 }
 
 console.log(segundaDose("Barbara"));
@@ -140,12 +138,12 @@ const avisoAosAtrasados = (nomeDoUsuario) => {
     ]
 
     //  Sua lógica aqui
-    /* for (let usuario of usuarios) {
+    for (let usuario of usuarios) {
         if (usuario.nome === nomeDoUsuario && usuario.imunizacao === "incompleta") {
             return `Olá ${nomeDoUsuario}! Sua imunização está ${usuario.imunizacao}, por favor volte ao postinho para tomar a segunda dose.`
         } else if (usuario.nome === nomeDoUsuario && usuario.imunizacao === "completa")
         return `Olá ${nomeDoUsuario}! Sua imunização está ${usuario.imunizacao}!`
-    } */
+    }
 }
 console.log(avisoAosAtrasados("Artur"));
 
@@ -182,7 +180,7 @@ const usuarios = [
 
 const cadastroDesafio = () => {
     //  Sua lógica aqui
-    /* const nome = prompt("Digite seu nome!")
+    const nome = prompt("Digite seu nome!")
     const ano = prompt("Digite seu ano de nascimento!")
     const nacionalidade = prompt("Digite sua nacionalidade!")
     const senha = prompt("Digite sua senha!")
@@ -199,40 +197,41 @@ const cadastroDesafio = () => {
     }
 
     usuarios = usuarios.push({novoUsuario})
- */
+
 }
 
 console.log(cadastroDesafio(usuarios));
 
 const loginDesafio = () => {
     //  Sua lógica aqui
-    /*     senhaUsuario = prompt("Digite sua senha!")
-    
-        for (let i = 0; i < usuarios.length; i++) {
-            if (usuarios[i].senha === senhaUsuario) {
-                return "Usuário Logado"
-            } else if (usuarios[1].senha === senhaUsuario) {
-                return "Usuário Logado"
-            } else if (usuarios[2].senha === senhaUsuario) {
-                return "Usuário Logado"
-            } else
-                return "Senha Inválida"
-        } */
+    senhaUsuario = prompt("Digite sua senha!")
+
+    for (let i = 0; i < usuarios.length; i++) {
+        if (usuarios[i].senha === senhaUsuario) {
+            return "Usuário Logado"
+        } else if (usuarios[1].senha === senhaUsuario) {
+            return "Usuário Logado"
+        } else if (usuarios[2].senha === senhaUsuario) {
+            return "Usuário Logado"
+        } else
+            return "Senha Inválida"
+    }
 }
 
 console.log(loginDesafio(usuarios));
 
 const primeiraDoseDesafio = () => {
     //  Sua lógica aqui
+    "Não consegui! :/"
 }
 
 console.log(primeiraDoseDesafio())
 
 const segundaDoseDesafio = (nomeDoUsuario) => {
     //  Sua lógica aqui
-/*     nomeDoUsuario = prompt("Digite seu nome!")
+    nomeDoUsuario = prompt("Digite seu nome!")
 
-    for (let i = 0; i <usuarios.length; i++) {
+    for (let i = 0; i < usuarios.length; i++) {
         if (usuarios[i].nome === nomeDoUsuario) {
             usuarios[i].imunizacao = "completa"
             return usuarios[i]
@@ -242,14 +241,14 @@ const segundaDoseDesafio = (nomeDoUsuario) => {
         } else if (usuarios[2].nome === nomeDoUsuario) {
             usuarios[2].imunizacao = "completa"
             return usuarios[2]
-        } else 
+        } else
             return "Seu cadastro não foi encontrado"
-        
-    } return usuarios */
+    }
 }
 console.log(segundaDoseDesafio("Carlos"));
 
 const avisoAosAtrasadosDesafio = () => {
     //  Sua lógica aqui
+    "Não consegui! :/"
 }
 console.log(avisoAosAtrasadosDesafio());
