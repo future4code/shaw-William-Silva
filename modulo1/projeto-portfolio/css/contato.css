@@ -1,0 +1,41 @@
+.formulario {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#formulario-nome {
+    width: 250px;
+    outline: none;
+}
+
+#formulario-email {
+    width: 250px;
+    outline: none;
+}
+
+#formulario-texto {
+    resize: none;
+    width: 250px;
+    height: 200px;
+    outline: none;
+}
+
+#formulario-enviar {
+    width: 250px;
+}
+
+.contato-titulo {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.hr-divisa-titulo {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    color: #005C53;
+}

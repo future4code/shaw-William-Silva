@@ -1,0 +1,36 @@
+.projeto-pokedex {
+    text-align: center;
+}
+
+.hr-divisa-titulo {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    color: #005C53;
+}
+
+.projeto-pokedex h2, h3, h4 {
+    padding: 20px 0 15px;
+}
+
+.imagens-projeto-pokedex {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+.imagens-projeto-pokedex #imagem-1 {
+    width: 400px;
+    height: 400px;
+}
+
+.imagens-projeto-pokedex #imagem-2 {
+    width: 350px;
+    height: 400px;
+}
+
+.imagens-projeto-pokedex #imagem-3 {
+    width: 200px;
+    height: 400px;
+}

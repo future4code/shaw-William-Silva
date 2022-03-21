@@ -1,0 +1,49 @@
+.projeto-base {
+    text-align: center;
+}
+
+.projeto-base .fundo-imagem {
+    background-color: #005C53;
+}
+
+.projeto-base .imagem-projeto-pokedex {
+    padding-top: 20px;
+    border-radius: 80px;
+    padding-bottom: 20px;
+    height: 500px;
+    width: 500px;
+}
+
+.projeto-base .titulo-pokedex h3 {
+    padding: 20px 0 15px;
+}
+
+.hr-divisa-texto {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    color: #005C53;
+}
+
+.botao-projeto-pokedex {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.projeto-base .imagem-projeto-blackjack {
+    padding-top: 20px;
+    border-radius: 50px;
+    padding-bottom: 20px;
+}
+
+.projeto-base .titulo-blackjack h3 {
+    padding: 20px 0 15px;
+}
+
+.botao-projeto-blackjack {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}

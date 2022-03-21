@@ -1,0 +1,36 @@
+.projeto-blackjack {
+    text-align: center;
+}
+
+.hr-divisa-titulo {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    color: #005C53;
+}
+
+.projeto-blackjack h2, h3, h4 {
+    padding: 20px 0 15px;
+}
+
+.imagens-projeto-blackjack {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+.imagens-projeto-blackjack #imagem-1 {
+    width: 300px;
+    height: 150px;
+}
+
+.imagens-projeto-blackjack #imagem-2 {
+    width: 300px;
+    height: 150px;
+}
+
+.imagens-projeto-blackjack #imagem-3 {
+    width: 300px;
+    height: 150px;
+}
