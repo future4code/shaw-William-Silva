@@ -4,7 +4,7 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #efefef;
 }
 
 .caixa-whatslab {
@@ -12,10 +12,11 @@
   flex-direction: column;
   width: 46vw;
   height: 96.5vh;
-  align-items: center;
+  align-items: flex-start;
   background-image: url(https://i.pinimg.com/originals/8e/6b/e9/8e6be91a01ba06f18b9eddfb944b2b42.jpg);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
 
 .caixa-input {
   display: flex;
