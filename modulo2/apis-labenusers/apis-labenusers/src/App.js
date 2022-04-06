@@ -3,12 +3,7 @@ import styled from "styled-components";
 import PageOne from "./Pages/PaginaInicial";
 import PageTwo from "./Pages/PaginaSecundaria";
 
-const Button = styled.button`
-width: 105px;
-height: 20px;
-`
-
-class App extends React.Component {
+export default class App extends React.Component {
 
   state = {
     telaBase: false
@@ -41,5 +36,3 @@ class App extends React.Component {
       )
   }
 }
-
-export default App
