@@ -1,38 +1,45 @@
 import React from "react";
 import styled from "styled-components";
-import PageOne from "./Pages/PaginaInicial";
-import PageTwo from "./Pages/PaginaSecundaria";
+import TelaCadastro from "./Components/TelaCadastro";
+import TelaListaUsuario from "./Components/TelaListaUsuario";
+
+const Main = styled.div`
+
+`
 
 export default class App extends React.Component {
 
   state = {
-    telaBase: false
+    tela: "cadastro"
   }
 
-  primeiraTela = () => {
-    this.setState({ telaBase: false })
+  trocarTela = () => {
+    switch (this.state.tela) {
+      case "cadastro":
+        return <TelaCadastro irParaLista={this.irParaLista} />
+      case "lista":
+        return <TelaListaUsuario irParaCadastro={this.irParaCadastro} />
+      default:
+        return <div>Erro! Página não encontrada</div>
+    }
   }
 
-  segundaTela = () => {
-    this.setState({ telaBase: true })
+  irParaCadastro = () => {
+    this.setState({ tela: "cadastro" })
+  }
+
+  irParaLista = () => {
+    this.setState({ tela: "lista" })
   }
 
   render() {
 
-    let pagina = {}
-
-    if (this.state.telaBase) {
-      pagina = <PageTwo trocarTela={this.primeiraTela} />
-    } else {
-      pagina = <PageOne trocarTela={this.segundaTela} />
-    }
-
     return (
 
-        <div>
-          {pagina}
-        </div>
+      <Main>
+        {this.trocarTela()}
+      </Main>
 
-      )
+    )
   }
 }
