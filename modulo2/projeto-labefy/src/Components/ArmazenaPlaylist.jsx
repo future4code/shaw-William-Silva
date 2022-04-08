@@ -2,23 +2,23 @@ import React from "react";
 import axios from "axios";
 import styled from "styled-components";
 
-const CaixaPlaylists = styled.div`
+const Main = styled.div`
 border: 1px solid black;
 padding: 10px;
 margin: 10px;
-width: 300px;
 display: flex;
-justify-content: space-between;
+flex-direction: row;
+justify-content: center;
+width: 80%;
+background-color: #FFFFFF;
 `
 
 export default class ArmazenaPlaylist extends React.Component {
 
     state = {
-        nomePlaylist: "",
-    }
 
-    componentDidMount() {
-        this.pegaPlaylist()
+        nomePlaylist: "",
+
     }
 
     criaPlaylist = () => {
@@ -45,31 +45,14 @@ export default class ArmazenaPlaylist extends React.Component {
         this.setState({ nomePlaylist: e.target.value })
     }
 
-    pegaPlaylist = () => {
-        const url = "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists"
-
-        axios.get(url, {
-            headers: {
-                Authorization: "william-freitas-shaw"
-            }
-        })
-            .then((res) => {
-                console.log(res.data)
-            })
-            .catch((err) => {
-                alert("Ocorreu um problema, tente novamente!")
-            })
-    }
-
     render() {
 
         return (
-            <div>
+
+            <Main>
                 <input value={this.state.nomePlaylist} onChange={this.nomearPlaylist} placeholder="Nome da Playlist" />
                 <button onClick={this.criaPlaylist} >Criar Playlist</button>
-                <button onClick={this.pegaPlaylist} >Mostrar Playlists</button>
-            </div >
-
+            </Main >
         )
     }
 }
