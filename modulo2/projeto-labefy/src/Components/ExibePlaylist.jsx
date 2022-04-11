@@ -22,7 +22,13 @@ margin: 10px;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-width: 300px;
+width: 50%;
+background-color: #2EBD59;
+color: #252525;
+`
+
+const Detalhes = styled.div`
+
 `
 
 var infoNaTela = false
@@ -48,6 +54,7 @@ export default class ExibePlaylist extends React.Component {
             .then((res) => {
                 this.setState({ listaPlaylist: res.data.result.list })
                 infoNaTela = !infoNaTela
+                console.log(res.data.result.list);
             })
             .catch((err) => {
                 alert("Ocorreu um problema, tente novamente!")
@@ -55,9 +62,9 @@ export default class ExibePlaylist extends React.Component {
     }
 
     deletaPlaylist = (id) => {
-        const url = "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId"
+        const url = `https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/${id}`
 
-        axios.del(url, {
+        axios.delete(url, {
             headers: {
                 Authorization: "william-freitas-shaw"
             }
@@ -76,9 +83,12 @@ export default class ExibePlaylist extends React.Component {
         let mostrarTela = this.state.listaPlaylist.map((pl) => {
             if (infoNaTela === true) {
                 return (
-                    <CaixaPlaylists key={pl.name}>
+                    <CaixaPlaylists key={pl.id}>
+                        <Detalhes>
+                            <button>Detalhes</button>
+                        </Detalhes>
                         {pl.name}
-                        <button onClick={() => this.deletaPlaylist(pl.name)} >X</button>
+                        <button onClick={() => this.deletaPlaylist(pl.id)} >X</button>
                     </CaixaPlaylists>
                 )
             }

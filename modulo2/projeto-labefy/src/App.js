@@ -1,14 +1,15 @@
 import React from "react";
+import styled from "styled-components";
 import ArmazenaPlaylist from "./Components/ArmazenaPlaylist";
 import ExibePlaylist from "./Components/ExibePlaylist";
-import styled from "styled-components";
+
 
 const Main = styled.div`
 justify-content: center;
 align-items: center;
 display: flex;
 flex-direction: column;
-background-color: #ca164f;
+background-color: #252525;
 width: 100vw;
 `
 

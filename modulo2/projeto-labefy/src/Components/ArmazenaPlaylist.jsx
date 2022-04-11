@@ -7,10 +7,17 @@ border: 1px solid black;
 padding: 10px;
 margin: 10px;
 display: flex;
-flex-direction: row;
+flex-direction: column;
 justify-content: center;
+text-align: center;
 width: 80%;
 background-color: #FFFFFF;
+`
+
+const Criacao = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: center;
 `
 
 export default class ArmazenaPlaylist extends React.Component {
@@ -50,8 +57,11 @@ export default class ArmazenaPlaylist extends React.Component {
         return (
 
             <Main>
-                <input value={this.state.nomePlaylist} onChange={this.nomearPlaylist} placeholder="Nome da Playlist" />
-                <button onClick={this.criaPlaylist} >Criar Playlist</button>
+                <h2>Labefy</h2>
+                <Criacao>
+                    <input value={this.state.nomePlaylist} onChange={this.nomearPlaylist} placeholder="Nome da Playlist" />
+                    <button onClick={this.criaPlaylist} >Criar Playlist</button>
+                </Criacao>
             </Main >
         )
     }
