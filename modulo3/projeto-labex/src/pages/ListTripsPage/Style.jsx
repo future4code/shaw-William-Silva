@@ -10,3 +10,12 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 `
+
+export const List = styled.div`
+margin: 3px;
+padding: 5px;
+border: 1px solid black;
+
+min-width: 30vw;
+max-width: 30vw;
+`

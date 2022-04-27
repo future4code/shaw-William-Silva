@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { goToApplication, goToHome } from "../../routes/Coordinator";
-import { Main } from "./Style";
+import { List, Main } from "./Style";
 
 export default function ListTrips() {
     const navigate = useNavigate()
@@ -10,32 +10,40 @@ export default function ListTrips() {
 
     const [tripsList, setTripsList] = useState([])
 
-    // const getTripsList = async () => {
+    const getTripsList = async () => {
 
-    //     await axios.get("https://us-central1-labenu-apis.cloudfunctions.net/labeX/:aluno/trips", {
-    //     })
-    //         .then((res) => {
-    //             setTripsList(tripsList)
-    //         })
-    //         .catch((err) => {
-    //             alert(err.response.data)
-    //         })
-    // }
+        await axios.get("https://us-central1-labenu-apis.cloudfunctions.net/labeX/:aluno/trips", {
+        })
+            .then((res) => {
+                setTripsList(res.data.trips)
+            })
+            .catch((err) => {
+                alert(err.data.trips)
+            })
+    }
 
-    // useEffect(() => {
-    //     getTripsList(tripsList)
-    // }, [tripsList])
+    useEffect(() => {
+        getTripsList()
+    }, [])
 
-    // let renderList = setTripsList.map((trip) => {
-    //     return <li key={trip.id}>{trip.name}</li>
-    // })
+    let renderList = tripsList.map((trip) => {
+        return <List key={trip.id}>
+            <p>Nome: {trip.name}</p>
+            <p>Descrição: {trip.description}</p>
+            <p>Planeta: {trip.planet}</p>
+            <p>Duração: {trip.durationInDays}</p>
+            <p>Data: {trip.date}</p>
+        </List>
+    })
 
     return (
         <Main>
-            <h1>SOU A LIST TRIPS PAGE</h1>
-            <button onClick={() => goToHome(navigate)} >Voltar</button>
-            <button onClick={() => goToApplication(navigate)} >Inscrever-se</button>
-            {/* {renderList} */}
+            <div>
+                <button onClick={() => goToHome(navigate)} >Voltar</button>
+                <button onClick={() => goToApplication(navigate)} >Inscrever-se</button>
+            </div>
+            <h1>Lista de Viagens</h1>
+            {renderList}
         </Main>
     )
 }
