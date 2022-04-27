@@ -1,5 +1,6 @@
 import React from "react";
 import { createGlobalStyle } from 'styled-components';
+import RouteList from "./routes/Route";
 
 const GlobalStyle = createGlobalStyle`
 	* {
@@ -13,7 +14,7 @@ export default function App() {
   return (
     <div>
       <GlobalStyle />
-      OLÁ MUNDO!
+      <RouteList />
     </div>
   );
 }
