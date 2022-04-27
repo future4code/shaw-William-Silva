@@ -12,7 +12,7 @@ export default function ListTrips() {
 
     const getTripsList = async () => {
 
-        await axios.get("https://us-central1-labenu-apis.cloudfunctions.net/labeX/:aluno/trips", {
+        await axios.get("https://us-central1-labenu-apis.cloudfunctions.net/labeX/william-freitas-shaw/trips", {
         })
             .then((res) => {
                 setTripsList(res.data.trips)
