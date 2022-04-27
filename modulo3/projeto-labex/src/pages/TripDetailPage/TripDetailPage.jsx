@@ -1,17 +1,16 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import { goToAdminHome } from "../../routes/Coordinator";
+import { Main } from "./Style";
 
 export default function TripDetail() {
     const navigate = useNavigate()
+    // const params = useParams()
 
-    const goToPrevious = () => {
-        navigate("/paineladm")
-    }
-    
-    return(
-        <div>
+    return (
+        <Main>
             <h1>SOU A TRIP DETAIL PAGE</h1>
-            <button onClick={goToPrevious} >Voltar</button>
-        </div>
+            <button onClick={() => goToAdminHome(navigate)} >Voltar</button>
+        </Main>
     )
 }

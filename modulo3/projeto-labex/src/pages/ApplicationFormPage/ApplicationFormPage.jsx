@@ -1,22 +1,17 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import { goToListTrip, sendApplication } from "../../routes/Coordinator";
+import { Main } from "./Style";
 
 export default function ApplicationForm() {
     const navigate = useNavigate()
-
-    const goToPrevious = () => {
-        navigate("/")
-    }
-
-    const sendApplication = () => {
-        navigate("/listagem")
-    }
+    // const params = useParams()
 
     return (
-        <div>
+        <Main>
             <h1>SOU A FORM PAGE</h1>
-            <button onClick={goToPrevious} >Voltar</button>
-            <button onClick={sendApplication} >Enviar</button>
-        </div>
+            <button onClick={() => goToListTrip(navigate)} >Voltar</button>
+            <button onClick={() => sendApplication(navigate)} >Enviar</button>
+        </Main>
     )
 }

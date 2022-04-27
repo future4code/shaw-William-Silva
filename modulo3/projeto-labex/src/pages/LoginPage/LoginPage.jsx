@@ -1,22 +1,17 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import { goToAdminHome, goToHome } from "../../routes/Coordinator";
+import { Main } from "./Style";
 
 export default function Login() {
     const navigate = useNavigate()
-
-    const goToPrevious = () => {
-        navigate("/")
-    }
-
-    const goToAdminHome = () => {
-        navigate("/paineladm")
-    }
+    // const params = useParams()
 
     return (
-        <div>
+        <Main>
             <h1>SOU A LOGIN PAGE</h1>
-            <button onClick={goToPrevious} >Voltar</button>
-            <button onClick={goToAdminHome} >Entrar</button>
-        </div>
+            <button onClick={() => goToHome(navigate)} >Voltar</button>
+            <button onClick={() => goToAdminHome(navigate)} >Entrar</button>
+        </Main>
     )
 }
