@@ -9,7 +9,7 @@ export default function Home() {
 
     return (
         <Main>
-            <h1>SOU A HOME PAGE</h1>
+            <h1>HOME PAGE</h1>
             <button onClick={() => goToListTrip(navigate)} >Ver Viagens</button>
             <button onClick={() => goToLogin(navigate)} >Área de Admin</button>
         </Main>

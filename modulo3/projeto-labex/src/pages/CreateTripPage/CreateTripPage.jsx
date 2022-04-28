@@ -1,11 +1,14 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import useProtectedPage from "../../hooks/useProtectedPage";
 import { goToAdminHome } from "../../routes/Coordinator";
 import { Main } from "./Style";
 
 export default function CreateTrip() {
     const navigate = useNavigate()
     // const params = useParams()
+
+    useProtectedPage()
 
     return (
         <Main>
