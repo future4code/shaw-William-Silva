@@ -161,6 +161,11 @@ export const Buttons = styled.div`
 
         color: white;
         background-image: linear-gradient(to right, #FF6489, #F9B24E);
+
+        :hover {
+            cursor: pointer;
+            transform: scale(1.01);
+        }
     }
 
     #create-button {
@@ -169,6 +174,11 @@ export const Buttons = styled.div`
         
         color: #fe7e01;
         background-color: white;
+
+        :hover {
+            cursor: pointer;
+            transform: scale(1.01);
+        }
     }
 
     @media screen and (max-device-width: 375px){

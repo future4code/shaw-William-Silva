@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { goToLogin } from "../../routes/Coordinator";
+import Labelogo from "../../logo/logo-labenu.jpg"
+import { Main, Header, Body } from "./StyleFeedPage";
 
 export default function Feed() {
     const navigate = useNavigate()
@@ -13,11 +15,17 @@ export default function Feed() {
 
     return (
         <div>
-            <h1>Sou a FeedPage</h1>
+            <Main>
+                <Header>
+                    <img src={Labelogo} />
+                    <button onClick={() => goToLogin(navigate)} >Logout</button>
+                </Header>
 
-            <button onClick={() => goToLogin(navigate)} >Logout</button>
-            <input onChange={onChangeText} value={text} type="text" placeholder="Escreva seu post..." />
-            <button>Postar</button>
+                <Body>
+                    <input onChange={onChangeText} value={text} type="text" placeholder="Escreva seu post..." />
+                    <button>Postar</button>
+                </Body>
+            </Main>
         </div>
     )
 }
