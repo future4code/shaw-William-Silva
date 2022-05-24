@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./index.js"
+    "start": "node ./index.js",
+    "add": "node ./soma.js",
+    "sub": "node ./sub.js",
+    "div": "node ./div.js",
+    "mult": "node ./mult.js",
+    "tarefa": "node ./tarefa.js"
   },
   "keywords": [],
   "author": "",

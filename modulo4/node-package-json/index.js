@@ -1,5 +1,5 @@
 //1.
-//a. Com o process.argv.
+//a. Com o process.argv
 
 //b. 
 
@@ -17,14 +17,9 @@
 
 //2.
 
-let operacao = Number(process.argv[2])
+// COMANDO: npm run add para somar.
+// COMANDO: npm run sub para subtrair.
+// COMANDO: npm run div para dividir.
+// COMANDO: npm run mult para multiplicar.
 
-switch (operacao) {
-    case "soma":
-        let soma = Number(process.argv[2]) + Number(process.argv[3])
-        console.log(soma);
-        break
-    case "sub":
-        let sub = Number(process.argv[2]) - Number(process.argv[3])
-        console.log(sub);
-}
+//3.
